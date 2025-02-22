@@ -7,3 +7,4 @@ https://ubaimutl.github.io/react-portfolio/about
 https://dezea.digital/services
 https://codepen.io/GreenSock/pen/GRoXzYj
 https://codepen.io/noeldelgado/pen/BaogqYy
+https://conermurphy.com/blog/make-flicker-free-dark-theme-toggle-nextjs-tailwindcss-next-themes/
