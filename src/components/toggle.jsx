@@ -1,5 +1,7 @@
 import { useTheme } from "next-themes";
 import React, { useEffect, useState } from "react";
+import Sun from "../../public/sun.svg"
+import Moon from "../../public/moon.svg"
 
 export default function Toggle() {
     const [mounted, setMounted] = useState(false);
@@ -17,9 +19,18 @@ export default function Toggle() {
                 checked={theme === "dark"}
                 onChange={() => setTheme(theme === "light" ? "dark" : "light")}
             />
-            <span className="slider"></span>
+            <div className="toggle-slider">
+                <div className="toggle-icon">
+                    {theme === "dark" ? (
+                        <Image src={Moon} alt="Moon Icon" width={20} height={20} />
+                    ) : (
+                        <Image src={Sun} alt="Sun Icon" width={20} height={20} />
+                    )}
+                </div>
+            </div>
+            {/* <span className="slider"></span>
             <span className="label label-dark">🌙</span>
-            <span className="label label-light">☀️</span>
+            <span className="label label-light">☀️</span> */}
 
             <style jsx>{`
                 .toggle-button {
