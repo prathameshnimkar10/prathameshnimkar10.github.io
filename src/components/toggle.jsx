@@ -8,23 +8,25 @@ import Moon from "../../public/moon.svg";
 
 export default function Toggle() {
     const [mounted, setMounted] = useState(false);
-    const { theme, setTheme } = useTheme();
+    const { theme, setTheme, resolvedTheme } = useTheme();
 
     useEffect(() => setMounted(true), []);
 
     if (!mounted) return null;
+
+    const currentTheme = theme === 'system' ? resolvedTheme : theme;
 
     return (
         <label className="toggle-button">
             <input
                 type="checkbox"
                 className="toggle-checkbox"
-                checked={theme === "dark"}
-                onChange={() => setTheme(theme === "light" ? "dark" : "light")}
+                checked={currentTheme === "dark"}
+                onChange={() => setTheme(currentTheme === "light" ? "dark" : "light")}
             />
             <div className="slider">
                 <div className="toggle-icon">
-                    {theme === "dark" ? (
+                    {currentTheme === "dark" ? (
                         <Image src={Moon} alt="Moon Icon" width={24} height={24} />
                     ) : (
                         <Image src={Sun} alt="Sun Icon" width={24} height={24} />

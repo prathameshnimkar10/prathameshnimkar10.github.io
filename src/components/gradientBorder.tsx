@@ -9,7 +9,6 @@ interface GradientBorderProps {
 
 export default function GradientBorder({
   children,
-  className = "",
   colors = ["#ffffff", "#4079ff", "#ffffff", "#4079ff", "#40ffaa"],
   animationSpeed = 5,
 }: GradientBorderProps) {
