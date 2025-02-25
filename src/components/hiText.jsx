@@ -18,7 +18,7 @@ export default function HiText() {
         <>
             {isMounted ? (
                 <SplitText
-                    text="Hi! I am Prathamesh!"
+                    text="Hi! I am qwertyqwer!"
                     className="text-3xl font-semibold text-center text-black dark:text-white"
                     delay={100}
                     animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
@@ -30,7 +30,7 @@ export default function HiText() {
                 />
             ) : (
                 <div className="text-3xl font-semibold text-center text-black dark:text-white tracking-wider">
-                    Hi! I am Prathamesh!
+                    Hi! I am qwertyqwer!
                 </div>
             )}
         </>
