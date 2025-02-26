@@ -1,6 +1,7 @@
 import Navbar from "../components/navbar";
 import HiText from "../components/hiText";
 import About from "../components/about";
+import Links from "../components/links"
 
 export default function MainPage() {
   return (
@@ -9,6 +10,7 @@ export default function MainPage() {
       <main className="pt-32 min-h-screen flex flex-col items-center w-full">
         <HiText />
         <About />
+        <Links />
       </main>
     </>
   );
