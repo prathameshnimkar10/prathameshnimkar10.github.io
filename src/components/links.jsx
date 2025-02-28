@@ -25,13 +25,13 @@ export default function LinksMarquee() {
             className="flex flex-col items-center mx-8 cursor-pointer"
           >
             <Image
-              width={50}
-              height={50}
+              width={40}
+              height={40}
               className="h-14 w-14 mb-2 dark:invert dark:hue-rotate-180"
               src={item.logo}
               alt={item.name}
             />
-            <span className="text-lg font-medium text-center">{item.name}</span> {/* Centered text */}
+            <span className="text-base font-medium text-center">{item.name}</span> {/* Centered text */}
           </a>
         ))}
       </Marquee>

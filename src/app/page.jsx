@@ -2,6 +2,7 @@ import Navbar from "../components/navbar";
 import HiText from "../components/hiText";
 import About from "../components/about";
 import Links from "../components/links"
+import Skills from "../components/skills"
 
 export default function MainPage() {
   return (
@@ -11,6 +12,7 @@ export default function MainPage() {
         <HiText />
         <About />
         <Links />
+        <Skills />
       </main>
     </>
   );
