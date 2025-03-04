@@ -1,8 +1,9 @@
 import Navbar from "../components/navbar";
 import HiText from "../components/hiText";
 import About from "../components/about";
-import Links from "../components/links"
-import Skills from "../components/skills"
+import Links from "../components/links";
+import Skills from "../components/skills";
+import Education from "../components/education";
 
 export default function MainPage() {
   return (
@@ -13,6 +14,7 @@ export default function MainPage() {
         <About />
         <Links />
         <Skills />
+        <Education />
       </main>
     </>
   );
