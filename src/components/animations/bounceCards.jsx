@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { gsap } from "gsap";
+import Image from "next/image";
 
 export default function BounceCards({
     className = "",
@@ -123,7 +124,7 @@ export default function BounceCards({
                         onMouseEnter={() => pushSiblings(idx)}
                         onMouseLeave={resetSiblings}
                     >
-                        <img className="w-full h-full object-cover" src={src} alt={`card-${idx}`} />
+                        <Image className="w-full h-full object-cover" src={src} alt={`card-${idx}`} />
                     </div>
 
                     <div

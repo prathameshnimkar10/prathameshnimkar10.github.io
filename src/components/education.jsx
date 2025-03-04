@@ -6,11 +6,11 @@ import iitpk from "../../public/iitpk.jpg"
 import uni from "../../public/MUJ.webp";
 
 const images = [
-    {uni},
-    {baravi},
-    {iitpk},
-    {shala},
-    {pahili}
+    uni,
+    baravi,
+    iitpk,
+    shala,
+    pahili
 ];
 
 const transformStyles = [

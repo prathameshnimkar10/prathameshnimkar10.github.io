@@ -1,8 +1,8 @@
 import SkillCards from "./skillCards";
 
 const skillsData = [
-  { id: 1, height: 300, name: "C/C++" },
-  { id: 2, height: 350, name: "Python" },
+  { id: 1, height: 290, name: "C/C++" },
+  { id: 2, height: 330, name: "Python" },
   { id: 3, height: 230, name: "MySQL" },
   { id: 4, height: 250, name: "MongoDB" },
   { id: 5, height: 90, name: "HTML/CSS" },
