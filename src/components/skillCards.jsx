@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo, useRef } from "react";
 import { useTransition, a } from "@react-spring/web";
-import Cards from "../components/cards"
+import Cards from "./animations/cards"
 
 function SkillCards({ data }) {
   const [columns, setColumns] = useState(2);

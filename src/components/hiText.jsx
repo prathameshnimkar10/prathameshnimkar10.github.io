@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import SplitText from "../components/splitText";
+import SplitText from "./animations/splitText";
 
 export default function HiText() {
     const [isMounted, setIsMounted] = useState(false);

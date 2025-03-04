@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import Toggle from "../components/toggle";
-import RoundedButton from "../components/roundedButton";
-import GradientBorder from "../components/gradientBorder"
+import RoundedButton from "../components/animations/roundedButton";
+import GradientBorder from "../components/animations/gradientBorder"
 import logo1 from "../../public/logo-1-crop.png";
 
 const Navbar = () => {
