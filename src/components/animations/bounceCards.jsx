@@ -116,7 +116,7 @@ export default function BounceCards({
             {images.map((src, idx) => (
                 <div key={idx} className="relative flex flex-col items-center group">
                     <div
-                        className={`card card-${idx} absolute w-[200px] aspect-square border-8 border-white rounded-[30px] overflow-hidden`}
+                        className={`card card-${idx} absolute w-[200px] aspect-square border-5 border-grey dark:border-white rounded-[30px] overflow-hidden`}
                         style={{
                             boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
                             transform: transformStyles[idx] || "none",
@@ -125,12 +125,6 @@ export default function BounceCards({
                         onMouseLeave={resetSiblings}
                     >
                         <Image className="w-full h-full object-cover" src={src} alt={`card-${idx}`} />
-                    </div>
-
-                    <div
-                        className="absolute bottom-[-40px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center text-white text-sm bg-gray-800 p-2 rounded-lg w-[180px]"
-                    >
-                        {educationDetails[idx]}
                     </div>
                 </div>
             ))}
