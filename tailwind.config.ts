@@ -9,6 +9,9 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      translate: {
+        "101": "101%",
+      },
       keyframes: {
         gradient: {
           "0%": { backgroundPosition: "0% 50%" },
@@ -19,10 +22,15 @@ const config: Config = {
           "0%": { opacity: "0", transform: "translateY(50px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        marquee: {
+          "from": { transform: "translateX(0%)" },
+          "to": { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         gradient: "gradient 5s ease infinite",
         riseUp: "riseUp 1s ease-out",
+        marquee: "marquee 15s linear infinite",
       },
       colors: {
         background: "var(--background)",
