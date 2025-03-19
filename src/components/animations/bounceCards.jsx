@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useEffect } from "react";
 import { gsap } from "gsap";
@@ -21,6 +21,8 @@ export default function BounceCards({
         "rotate(2deg) translate(170px)",
     ],
     enableHover = true,
+    onHover = () => {},  // <-- Ensure function is received
+    onLeave = () => {},  // <-- Ensure function is received
 }) {
     useEffect(() => {
         gsap.fromTo(
@@ -63,6 +65,9 @@ export default function BounceCards({
     const pushSiblings = (hoveredIdx) => {
         if (!enableHover) return;
 
+        console.log("Hovering on card:", hoveredIdx); // Debugging Log
+        onHover(hoveredIdx); // <-- Call the function to notify parent
+
         images.forEach((_, i) => {
             gsap.killTweensOf(`.card-${i}`);
             const baseTransform = transformStyles[i] || "none";
@@ -94,6 +99,10 @@ export default function BounceCards({
 
     const resetSiblings = () => {
         if (!enableHover) return;
+
+        console.log("Hover ended"); // Debugging Log
+        onLeave(); // <-- Call the function to notify parent
+
         images.forEach((_, i) => {
             gsap.killTweensOf(`.card-${i}`);
             const baseTransform = transformStyles[i] || "none";
@@ -105,6 +114,7 @@ export default function BounceCards({
             });
         });
     };
+
     return (
         <div
             className={`relative flex items-center justify-center ${className}`}
