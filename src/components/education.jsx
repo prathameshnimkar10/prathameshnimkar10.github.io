@@ -37,36 +37,39 @@ export default function Education() {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleCardHover = (index) => {
-      console.log("Hovered on index:", index);
-      setActiveIndex(index);
+    console.log("Hovered on index:", index);
+    setActiveIndex(index);
   };
 
   const handleCardLeave = () => {
-      console.log("Hover ended");
-      setActiveIndex(null);
+    console.log("Hover ended");
+    setActiveIndex(null);
   };
 
   return (
-      <div className="mt-10 mb-20 flex flex-col items-center w-full">
-          {/* Cards Section */}
-          <div className="relative">
-              <BounceCards
-                  className="custom-bounceCards"
-                  images={images}
-                  educationDetails={educationDetails.map((edu) => edu.title)}
-                  containerWidth={500}
-                  containerHeight={250}
-                  animationDelay={1}
-                  animationStagger={0.08}
-                  easeType="elastic.out(1, 0.5)"
-                  enableHover={true}
-                  onHover={handleCardHover}
-                  onLeave={handleCardLeave}
-              />
-          </div>
-
-          {/* Details Section */}
-          <EduDetails activeItem={activeIndex !== null ? educationDetails[activeIndex] : null} />
+    <div className="mt-10 mb-20 flex flex-col items-center w-full">
+      {/* Cards Section */}
+      <div className="relative">
+        <BounceCards
+          className="custom-bounceCards"
+          images={images}
+          educationDetails={educationDetails.map((edu) => edu.title)}
+          containerWidth={500}
+          containerHeight={250}
+          animationDelay={1}
+          animationStagger={0.08}
+          easeType="elastic.out(1, 0.5)"
+          enableHover={true}
+          onHover={handleCardHover}
+          onLeave={handleCardLeave}
+        />
       </div>
+
+      {/* Details Section */}
+      <EduDetails
+        className = "mt-28"
+        activeItem={activeIndex !== null ? educationDetails[activeIndex] : null}
+      />
+    </div>
   );
 }
