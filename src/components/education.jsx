@@ -4,7 +4,7 @@ import { useState } from "react";
 import BounceCards from "./animations/bounceCards";
 import EduDetails from "./eduDetails";
 import pahili from "../../public/1st.png";
-import shala from "../../public/ssrvm.jpeg";
+import shala from "../../public/ssrvm.png";
 import baravi from "../../public/12th.jpeg";
 import iitpk from "../../public/iitpk.jpg";
 import uni from "../../public/MUJ.webp";
@@ -38,7 +38,7 @@ export default function Education() {
 
   const handleCardHover = (index) => {
     console.log("Hovered on index:", index);
-    setActiveIndex(index);
+    setActiveIndex(educationDetails.length - 1 - index);
   };
 
   const handleCardLeave = () => {

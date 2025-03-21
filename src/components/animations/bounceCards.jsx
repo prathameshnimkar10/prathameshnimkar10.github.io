@@ -100,7 +100,7 @@ export default function BounceCards({
     const resetSiblings = () => {
         if (!enableHover) return;
 
-        console.log("Hover ended"); // Debugging Log
+        // console.log("Hover ended"); // Debugging Log
         onLeave(); // <-- Call the function to notify parent
 
         images.forEach((_, i) => {
@@ -134,7 +134,7 @@ export default function BounceCards({
                         onMouseEnter={() => pushSiblings(idx)}
                         onMouseLeave={resetSiblings}
                     >
-                        <Image className="w-full h-full object-cover" src={src} alt={`card-${idx}`} />
+                        <Image className="w-full h-full object-contain" src={src} alt={`card-${idx}`} />
                     </div>
                 </div>
             ))}

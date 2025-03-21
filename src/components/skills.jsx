@@ -1,3 +1,5 @@
+"use client";
+
 import SkillCards from "./skillCards";
 
 const skillsData = [
@@ -5,7 +7,7 @@ const skillsData = [
   { id: 2, height: 330, name: "Python" },
   { id: 3, height: 230, name: "MySQL" },
   { id: 4, height: 250, name: "MongoDB" },
-  { id: 5, height: 90, name: "HTML/CSS" },
+  // { id: 5, height: 90, name: "HTML/CSS" },
   { id: 6, height: 160, name: "Next.JS basics" },
   { id: 7, height: 300, name: "Data Structures and Algorithms" },
   { id: 8, height: 300, name: "Object Oriented Programming" },
@@ -15,10 +17,26 @@ const skillsData = [
   { id: 12, height: 210, name: "Agile Methodologies" },
   { id: 13, height: 200, name: "Cloud Computing" },
   { id: 14, height: 160, name: "StarUML" },
-  { id: 15, height: 120, name: "PowerBI" },
-  { id: 16, height: 100, name: "Postman" },
+  { id: 15, height: 140, name: "PowerBI" },
+  { id: 16, height: 110, name: "Postman" },
 ];
 
 export default function Skills() {
-    return <SkillCards data={skillsData} />;
+  return (
+    <>
+      <h1 className="header items-center justify-center text-3xl animate-riseUp">My Skills</h1>
+      <SkillCards data={skillsData} />
+      <style jsx>{`
+        @font-face {
+          font-family: "h1Tag";
+          src: url("/fonts/Kollektif.ttf") format("truetype");
+          font-weight: normal;
+          font-style: normal;
+        }
+        .header {
+          font-family: "h1Tag", sans-serif;
+        }
+      `}</style>
+    </>
+  );
 }

@@ -14,7 +14,7 @@ export default function EduDetails({ activeItem, className = "" }) {
                         src={activeItem.image}
                         alt={activeItem.title}
                         layout="fill"
-                        objectFit="cover"
+                        objectFit="contain"
                         className="transition-all duration-500"
                     />
                 </div>

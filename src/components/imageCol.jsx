@@ -8,8 +8,8 @@ export default function ImageCol() {
                 <Image
                     src={Me}
                     alt="Profile"
-                    width={256}
-                    height={256}
+                    width={265}
+                    height={265}
                     className="w-full h-full object-cover"
                 />
             </div>
