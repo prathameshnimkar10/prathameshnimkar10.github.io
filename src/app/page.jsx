@@ -5,6 +5,8 @@ import Links from "../components/links";
 import Skills from "../components/skills";
 import Education from "../components/education";
 import Projects from "../components/projects";
+import Experience from "../components/showExp";
+import Footer from "../components/footer";
 
 export default function MainPage() {
   return (
@@ -17,6 +19,8 @@ export default function MainPage() {
         <Skills />
         <Education className = "mb-8"/>
         <Projects />
+        <Experience />
+        <Footer />
       </main>
     </>
   );
