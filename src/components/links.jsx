@@ -6,10 +6,10 @@ import linkedin from "../../public/linkedin.svg";
 import leetcode from "../../public/leetcode.svg";
 
 const logos = [
-  { logo: res, url: "https://gdrive.com/yourprofile", name: "Resume" },
-  { logo: git, url: "https://github.com/yourprofile", name: "GitHub" },
-  { logo: linkedin, url: "https://linkedin.com/in/yourprofile", name: "LinkedIn" },
-  { logo: leetcode, url: "https://leetcode.com/in/yourprofile", name: "LeetCode" }
+  { logo: res, url: "https://drive.google.com/file/d/16jAW3dZ_YuY6s5Usc0NlA1OhNirckohe/view?usp=drive_link", name: "Resume" },
+  { logo: git, url: "https://github.com/prathameshnimkar10", name: "GitHub" },
+  { logo: linkedin, url: "https://www.linkedin.com/in/prathamesh-nimkar-8b911622b/", name: "LinkedIn" },
+  { logo: leetcode, url: "https://leetcode.com/prathamesh_n10/", name: "LeetCode" }
 ];
 
 export default function LinksMarquee() {

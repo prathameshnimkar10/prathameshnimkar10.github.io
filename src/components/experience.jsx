@@ -6,32 +6,32 @@ import "react-vertical-timeline-component/style.min.css";
 const WorkIcon = () => <div style={{ width: "100%", height: "100%" }}></div>
 
 const experiences = [
+    // {
+    //     title: "AI/Software Developer Intern",
+    //     subtitle: "Techcurators Ltd., Delhi, DL",
+    //     date: "Sept. 2024 - present",
+    //     description:
+    //         "z",
+    // },
     {
-        title: "Creative Director",
-        subtitle: "Miami, FL",
-        date: "2011 - present",
+        title: "Celebal Summer Intern",
+        subtitle: "Celebal Technologies, Remote",
+        date: "May 2024 - July 2024",
         description:
-            "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+            "wowerigbneobg goiwe bgoiq bweoi[gbowe goiweqbgiopwe bi[goew gowie[bgipoweq bgiowe goiwq buovfovlcwbedvoiwb vq[weblkgmv w",
     },
     {
-        title: "Art Director",
-        subtitle: "San Francisco, CA",
-        date: "2010 - 2011",
-        description:
-            "Creative Direction, User Experience, Visual Design, SEO, Online Marketing",
+        title: "Book Chapter author",
+        subtitle: "MUJ, Jaipur",
+        date: "Sept. 2023 - Dec. 2023",
+        description: "Sucessfully published. weobfgw0eibgfuwe web9uvbweqpu9gbf;weiufbw efuwqebfowvebf",
     },
-    {
-        title: "Web Designer",
-        subtitle: "Los Angeles, CA",
-        date: "2008 - 2010",
-        description: "User Experience, Visual Design",
-    },
-    {
-        title: "Web Designer",
-        subtitle: "San Francisco, CA",
-        date: "2006 - 2008",
-        description: "User Experience, Visual Design",
-    },
+    // {
+    //     title: "Web Designer",
+    //     subtitle: "San Francisco, CA",
+    //     date: "2006 - 2008",
+    //     description: "User Experience, Visual Design",
+    // },
 ];
 
 export default function MyExperience() {

@@ -1,15 +1,23 @@
 export default function AboutMe() {
     return (
         <div className="flex justify-end w-full">
-            <div className="text-lg md:text-xl lg:text-2xl font-semibold">
-                <p>oifhwoegeufuoubo2bf2befwfwfewfqqef</p>
-                <p>herherhherwljbdvowbevuwbegliubwegw</p>
-                <p>hreherhasdwelgubagubwaiugbiudsb</p>
-                <p>grgqrqgewpiwebgibwepigbwpefqpdwvwdv</p>
-                <p>3ywrehbhadiluvbasldivxsnpawoeihfwuepg</p>
-                <p>werhewhewaldubvaouvbweubwweoeuwgfoewbq</p>
-                <p className="font-bold">Personal likes?</p>
+            <div className="text-base md:text-base lg:text-xl font-normal">
+                <p style={{ textAlign: "justify" }}>
+                    I am a Prathamesh Nimkar, final year undergraduate student pursuing a Bachelor's in Information Technology at Manipal University Jaipur.
+                </p>
+                <p style={{ textAlign: "justify" }}>
+                    I am passionate about software engineering, AI/ML, and automation (DevOps), with a focus on building efficient, AI-driven solutions to real-world problems.
+                </p>
+                {/* <p style={{ textAlign: "justify" }}>Through projects and internships, I have gained hands-on experience in software development and AI/ML, continuously enhancing my skills.</p> */}
+                <p style={{ textAlign: "justify" }}>
+                    I am eager to explore new technologies, collaborate with like-minded professionals, and contribute to innovative projects in software engineering and AI.
+                </p>
+                <p style={{ textAlign: "justify" }}>
+                    Beyond academics, I enjoy playing/watching football, badminton, table tennis, and F1, always open to challenges and learning experiences.
+                </p>
+                {/* <p className="font-bold">Hobbies: </p> 
+                <p>I love playing football, badminton, and table tennis. I also enjoy watching football matches (the team I support).</p> */}
             </div>
         </div>
     );
-}  
+}
