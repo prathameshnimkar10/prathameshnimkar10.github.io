@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.html:not([data-theme]){
+  opacity: 0;
+  visibility: hidden;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
