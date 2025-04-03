@@ -2,6 +2,7 @@ import {
     VerticalTimeline, VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import Link from "next/link";
 
 const WorkIcon = () => <div style={{ width: "100%", height: "100%" }}></div>
 
@@ -30,9 +31,9 @@ const experiences = [
         description: [
             "Co-authored a chapter on Machine Learning and Deep Learning in the book Big Data Analytics Techniques for Market Intelligence, with a friend and our mentor, exploring advanced data-driven approaches.",
             "We discussed the basics of Machine Learning and Deep Learning, gradually setting up the reader for future advanced concepts covered in the book.",
-            <a href="https://www.igi-global.com/chapter/machine-learning-and-deep-learning-for-big-data-analysis/336351" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.igi-global.com/chapter/machine-learning-and-deep-learning-for-big-data-analysis/336351" target="_blank" rel="noopener noreferrer">
                 Book Link: <b>Big Data Analytics Techniques for Market Intelligence</b>
-            </a>,
+            </Link>,
         ],
     },
     // {
