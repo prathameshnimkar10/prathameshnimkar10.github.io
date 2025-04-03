@@ -13,6 +13,9 @@ export default function AboutMe() {
                     I am eager to explore new technologies, collaborate with like-minded professionals, and contribute to innovative projects in software engineering and AI.
                 </p>
                 <p style={{ textAlign: "justify" }}>
+                    I am fluent in English, Marathi and Hindi, with Marathi being my native language. I have also studied Sanskrit during my academic years and have developed a strong understanding of the language.
+                </p>
+                <p style={{ textAlign: "justify" }}>
                     Beyond academics, I enjoy playing/watching football, badminton, table tennis, and F1, always open to challenges and learning experiences.
                 </p>
                 {/* <p className="font-bold">Hobbies: </p> 

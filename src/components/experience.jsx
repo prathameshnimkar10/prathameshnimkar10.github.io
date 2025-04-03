@@ -77,13 +77,13 @@ export default function MyExperience() {
                         <h4 className="vertical-timeline-element-subtitle italic dark:text-[#3c4142]">
                             {exp.subtitle}
                         </h4>
-                        <p className="dark:text-[#413e42]">
+                        <div className="dark:text-[#413e42]">
                             <ul className="list-disc pl-5">
                                 {exp.description.map((point, i) => (
                                     <li key={i}>{point}</li>
                                 ))}
                             </ul>
-                        </p>
+                        </div>
                     </VerticalTimelineElement>
                 ))}
             </VerticalTimeline>
