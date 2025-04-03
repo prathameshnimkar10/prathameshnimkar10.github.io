@@ -17,14 +17,23 @@ const experiences = [
         title: "Celebal Summer Intern",
         subtitle: "Celebal Technologies, Remote",
         date: "May 2024 - July 2024",
-        description:
-            "wowerigbneobg goiwe bgoiq bweoi[gbowe goiweqbgiopwe bi[goew gowie[bgipoweq bgiowe goiwq buovfovlcwbedvoiwb vq[weblkgmv w",
+        description: [
+            "Developed and optimized machine learning models, achieving up to 92% accuracy across three assigned projects.",
+            "Analyzed diverse datasets using Power BI, Seaborn, and Matplotlib to extract key insights and drive data-driven decisions.",
+            "Enhanced overall performance of machine learning algorithms by refining data preprocessing and model tuning techniques."
+        ],
     },
     {
         title: "Book Chapter author",
         subtitle: "MUJ, Jaipur",
         date: "Sept. 2023 - Dec. 2023",
-        description: "Sucessfully published. weobfgw0eibgfuwe web9uvbweqpu9gbf;weiufbw efuwqebfowvebf",
+        description: [
+            "Co-authored a chapter on Machine Learning and Deep Learning in the book Big Data Analytics Techniques for Market Intelligence, with a friend and our mentor, exploring advanced data-driven approaches.",
+            "We discussed the basics of Machine Learning and Deep Learning, gradually setting up the reader for future advanced concepts covered in the book.",
+            <a href="https://www.igi-global.com/chapter/machine-learning-and-deep-learning-for-big-data-analysis/336351" target="_blank" rel="noopener noreferrer">
+                Book Link: <b>Big Data Analytics Techniques for Market Intelligence</b>
+            </a>,
+        ],
     },
     // {
     //     title: "Web Designer",
@@ -41,7 +50,7 @@ export default function MyExperience() {
                 MY EXPERIENCE!
             </h1>
             <VerticalTimeline lineColor="#8c6c47">
-            {/* <VerticalTimeline lineColor="#c4b04b"> */}
+                {/* <VerticalTimeline lineColor="#c4b04b"> */}
                 {experiences.map((exp, index) => (
                     <VerticalTimelineElement
                         key={index}
@@ -67,7 +76,13 @@ export default function MyExperience() {
                         <h4 className="vertical-timeline-element-subtitle italic dark:text-[#3c4142]">
                             {exp.subtitle}
                         </h4>
-                        <p className="dark:text-[#413e42]">{exp.description}</p>
+                        <p className="dark:text-[#413e42]">
+                            <ul className="list-disc pl-5">
+                                {exp.description.map((point, i) => (
+                                    <li key={i}>{point}</li>
+                                ))}
+                            </ul>
+                        </p>
                     </VerticalTimelineElement>
                 ))}
             </VerticalTimeline>
