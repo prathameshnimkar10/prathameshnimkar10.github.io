@@ -32,8 +32,8 @@ export default function RootLayout({
     >
       <body suppressHydrationWarning>
         {/* <!-- Google tag (gtag.js) --> */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-09GZ6JS23R"></Script>
-        <Script id="google-analytics">
+        <Script async strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-09GZ6JS23R"></Script>
+        <Script strategy="afterInteractive" id="google-analytics">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){window.dataLayer.push(arguments);}
