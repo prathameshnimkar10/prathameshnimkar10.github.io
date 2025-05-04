@@ -7,17 +7,17 @@ import Link from "next/link";
 const WorkIcon = () => <div style={{ width: "100%", height: "100%" }}></div>
 
 const experiences = [
-    {
-        title: "AI / Software Developer Intern",
-        subtitle: "TechCurators Ltd., Delhi",
-        date: "Sept. 2024 - Present",
-        description: [
-            "Developed the firm's AI products, significantly enhancing their efficiency and integrating them into backend systems through API implementation.",
-            "Conducted extensive research on Generative AI, contributing to five case studies and a book chapter.",
-            "Collaborated on the creation of customized software applications and full-stack websites for a diverse range of clients, ensuring high-quality deliverables that meet specific needs.",
-            "Worked in deploying full-stack website on Azure for a client (including frontend, backend, and admin panel), as well as hosting and managing them on GoDaddy."
-        ],
-    },
+    // {
+    //     title: "AI / Software Developer Intern",
+    //     subtitle: "TechCurators Ltd., Delhi",
+    //     date: "Sept. 2024 - Present",
+    //     description: [
+    //         "Developed the firm's AI products, significantly enhancing their efficiency and integrating them into backend systems through API implementation.",
+    //         "Conducted extensive research on Generative AI, contributing to five case studies and a book chapter.",
+    //         "Collaborated on the creation of customized software applications and full-stack websites for a diverse range of clients, ensuring high-quality deliverables that meet specific needs.",
+    //         "Worked in deploying full-stack website on Azure for a client (including frontend, backend, and admin panel), as well as hosting and managing them on GoDaddy."
+    //     ],
+    // },
     {
         title: "Celebal Summer Intern",
         subtitle: "Celebal Technologies, Remote",
