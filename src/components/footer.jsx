@@ -8,6 +8,8 @@ import {
     RiGithubLine,
     RiTwitterXLine,
     RiLinkedinBoxFill,
+    RiPauseLargeFill,
+    RiArticleLine,
 
 } from "@remixicon/react";
 import Leetcode from "../../public/leetcode.svg";
@@ -34,11 +36,13 @@ const LeetcodeIcon = () => (
 
 const socialLinks = [
     // { id: 0, Icon: RiYoutubeLine, href: "/" },
+    { id: 0, Icon: RiLinkedinBoxFill, href: "https://www.linkedin.com/in/prathamesh-nimkar-8b911622b/" },
+    { id: 2, Icon: RiArticleLine, href: "https://drive.google.com/file/d/16jAW3dZ_YuY6s5Usc0NlA1OhNirckohe/view?usp=drive_link" },
     { id: 3, Icon: RiGithubLine, href: "https://github.com/prathameshnimkar10" },
     // { id: 2, Icon: RiFacebookBoxLine, href: "/" },
     // { id: 4, Icon: RiTwitterXLine, href: "/" },
     { id: 5, Icon: LeetcodeIcon, href: "https://leetcode.com/prathamesh_n10/" },
-    { id: 1, Icon: RiInstagramLine, href: "/" },
+    // { id: 1, Icon: RiInstagramLine, href: "/" },
 ];
 
 const classes = {

@@ -16,7 +16,7 @@ export default function AboutMe() {
                     I am fluent in English, Marathi and Hindi, with Marathi being my native language. I have also studied Sanskrit during my academic years and have developed a strong understanding of the language.
                 </p>
                 <p style={{ textAlign: "justify" }}>
-                    Beyond academics, I enjoy playing/watching football, badminton, table tennis, and F1, always open to challenges and learning experiences.
+                    Beyond academics, I enjoy playing/watching football, badminton, table tennis, basketball and F1, always open to challenges and learning experiences.
                 </p>
                 {/* <p className="font-bold">Hobbies: </p> 
                 <p>I love playing football, badminton, and table tennis. I also enjoy watching football matches (the team I support).</p> */}
