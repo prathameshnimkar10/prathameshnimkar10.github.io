@@ -13,8 +13,9 @@ const experiences = [
     //     date: "Sept. 2024 - Present",
     //     description: [
     //         "Developed the firm's AI products, significantly enhancing their efficiency and integrating them into backend systems through API implementation.",
-    //         "Conducted extensive research on Generative AI, contributing to five case studies and a book chapter.",
+    //         "Conducted extensive research on Generative AI, contributing to five case studies and a book chapter titled 'AI Nama'.",
     //         "Collaborated on the creation of customized software applications and full-stack websites for a diverse range of clients, ensuring high-quality deliverables that meet specific needs.",
+    //         "Contributed to the design and development of TOSS, and was a part of its full-stack development and making AI tools for the same.",
     //         "Worked in deploying full-stack website on Azure for a client (including frontend, backend, and admin panel), as well as hosting and managing them on GoDaddy."
     //     ],
     // },

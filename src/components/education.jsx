@@ -38,8 +38,8 @@ const educationDetails = [
     title: "Manipal University Jaipur",
     location: "Jaipur, RJ",
     time: "Aug. 2021 - Jul. 2025",
-    gpa: "8.81",
-    description: "Dean's List in 4th, 5th, 6th, 7th Semesters\nParticipated in various hackathons\nMember of the Coding Club",
+    gpa: "8.90",
+    description: "Dean's List in 4th, 5th, 6th, 7th, 8th Semesters\nParticipated in various hackathons\nMember of the Coding Club",
     image: uni,
   },
   {
@@ -47,7 +47,7 @@ const educationDetails = [
     location: "Pune, MH",
     time: "Jun. 2019 - Apr. 2021",
     gpa: "92%",
-    description: "12th Grade - Maharashtra State Board (Jun.2020 - Apr. 2021)",
+    description: "12th Grade - Maharashtra State Board (Jun. 2020 - Apr. 2021)",
     image: baravi,
   },
   {
