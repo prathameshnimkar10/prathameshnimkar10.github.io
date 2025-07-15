@@ -25,6 +25,7 @@
 *.pem
 localhost_3000-20250322T011708.html
 prathameshnimkar10.github.io-20250407T133953.html
+links.jsx
 
 # debug
 npm-debug.log*

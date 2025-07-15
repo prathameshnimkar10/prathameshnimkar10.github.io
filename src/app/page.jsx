@@ -1,7 +1,7 @@
 import Navbar from "../components/navbar";
 import HiText from "../components/hiText";
 import About from "../components/about";
-import Links from "../components/links";
+// import Links from "../components/links";
 import Skills from "../components/skills";
 import Education from "../components/education";
 import Projects from "../components/projects";
@@ -15,7 +15,7 @@ export default function MainPage() {
       <main className="pt-32 min-h-screen flex flex-col items-center w-full gap-y-12">
         <HiText />
         <About />
-        <Links />
+        {/* <Links /> */}
         <Skills />
         <Education className = "mb-8"/>
         <Projects />
