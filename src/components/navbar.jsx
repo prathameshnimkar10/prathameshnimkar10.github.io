@@ -13,32 +13,34 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-4 left-0 w-full flex items-center justify-between px-10 z-50">
-      <motion.div
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-        className="mb-2 sm:mb-0"
-      >
-        <RoundedButton
-          icon={
-            <Image
-              src={logo1}
-              alt="Logo1"
-              width={100}
-              height={100}
-              className="object-contain rounded-full" />
-          }
-          link="/"
-        />
-      </motion.div>
+    <nav className="fixed top-4 left-0 w-full flex flex-col sm:flex-row items-center justify-between px-4 sm:px-10 z-50">
+      <div className="flex items-center justify-between w-full sm:w-auto mb-4 sm:mb-0">
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="mb-2 sm:mb-0"
+        >
+          <RoundedButton
+            icon={
+              <Image
+                src={logo1}
+                alt="Logo1"
+                width={100}
+                height={100}
+                className="object-contain rounded-full" />
+            }
+            link="/"
+          />
+        </motion.div>
 
-      <div className="sm:hidden">
-        <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="text-black dark:text-white focus:outline-none">
-          {isMenuOpen ? "✖" : "☰"}
-        </button>
+        <div className="sm:hidden flex justify-center w-full">
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="text-black dark:text-white focus:outline-none text-2xl">
+            {isMenuOpen ? "✖" : "☰"}
+          </button>
+        </div>
       </div>
 
       {/* main navbar */}
@@ -69,11 +71,11 @@ const Navbar = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="mt-2 sm:mt-0"
+        className="hidden sm:block mt-4 sm:mt-0"
       >
         <GradientBorder>
           <button
-            onClick={() => window.location.href = 'mailto:xyz@gmail.com'}
+            onClick={() => window.location.href = 'mailto:prathamesh.nimkar2804@gmail.com'}
             className="rounded-full bg-white dark:bg-black shadow-lg flex items-center px-4 sm:px-6 py-2 border border-gray-200 text-sm sm:text-base text-black dark:text-white hover:shadow-xl transition duration-300"
           >
             📩 <span className="ml-2">Email me!</span>
