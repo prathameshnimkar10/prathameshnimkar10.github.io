@@ -1,6 +1,6 @@
 export default function AboutMe() {
     return (
-        <div className="flex justify-end w-full">
+        <div className="w-full md:w-3/5">
             <div className="text-base md:text-base lg:text-xl font-normal">
                 <p style={{ textAlign: "justify" }}>
                     I am a Prathamesh Nimkar, final year undergraduate student pursuing a Bachelor's in Information Technology at Manipal University Jaipur.

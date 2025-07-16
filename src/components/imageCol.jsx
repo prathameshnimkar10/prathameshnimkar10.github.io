@@ -3,13 +3,13 @@ import Me from "../../public/photo3.jpg"
 
 export default function ImageCol() {
     return (
-        <div className="flex justify-start w-full">
-            <div className="ml-6 w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 border-2 border-black dark:border-white">
+        <div className="w-full md:w-1/3 mb-6 md:mb-0">
+            <div className="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 border-2 border-black dark:border-white mx-auto">
                 <Image
                     src={Me}
                     alt="Profile"
-                    width={265}
-                    height={265}
+                    width={285}
+                    height={285}
                     className="w-full h-full object-cover"
                 />
             </div>
