@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Me from "../../public/ssrvm.png";
+import Me from "../../public/photo3.jpg";
 
 export default function ImageCol() {
     return (

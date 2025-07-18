@@ -16,7 +16,9 @@ const demoItems = [
 
 const Projects = () => (
     <div className="w-screen h-screen">
-        <h1 className="text-center items-center justify-center font-bold text-3xl mb-6">PROJECTS</h1>
+        <h1 className="text-center items-center justify-center font-bold text-3xl mb-6">
+            PROJECTS
+        </h1>
         <FlowingMenu items={demoItems} />
     </div>
 );

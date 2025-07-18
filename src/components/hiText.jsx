@@ -19,17 +19,17 @@ export default function HiText() {
             {isMounted ? (
                 <SplitText
                     text="Hello! I am Prathamesh!"
-                    className="text-3xl font-semibold text-center text-black dark:text-white"
+                    className="text-3xl font-semibold text-center text-black dark:text-white my-0"
                     delay={100}
                     animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
                     animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
                     easing="easeOutCubic"
                     threshold={0.2}
-                    rootMargin="-50px"
+                    rootMargin="0px"
                     onLetterAnimationComplete={handleAnimationComplete}
                 />
             ) : (
-                <div className="text-3xl font-semibold text-center text-black dark:text-white tracking-wider">
+                <div className="text-3xl font-semibold text-center text-black dark:text-white tracking-wider my-0">
                     Hello! I am Prathamesh!
                 </div>
             )}

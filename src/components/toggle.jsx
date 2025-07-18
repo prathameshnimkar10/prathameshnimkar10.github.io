@@ -10,7 +10,9 @@ export default function Toggle() {
     const [mounted, setMounted] = useState(false);
     const { theme, setTheme, resolvedTheme } = useTheme();
 
-    useEffect(() => setMounted(true), []);
+    useEffect(() => {
+        setMounted(true);
+    }, []);
 
     if (!mounted) return null;
 
@@ -58,7 +60,7 @@ export default function Toggle() {
                     left: 0;
                     width: 78px;
                     height: 38px;
-                    background-color: #ec6838;
+                    background-color: ${currentTheme === "dark" ? "#333" : "#ec6838"};
                     border-radius: 40px;
                     transition: background-color 0.6s, transform 0.8s;
                     display: flex;
@@ -78,7 +80,7 @@ export default function Toggle() {
                     justify-content: center;
                 }
 
-                toggle-checkbox:checked + .slider:before,
+                .toggle-checkbox:checked + .slider:before,
                 .toggle-checkbox:checked + .slider .toggle-icon {
                     transform: translateX(40px);
                 }
