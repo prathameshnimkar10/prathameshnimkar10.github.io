@@ -1,3 +1,4 @@
+// \src\components\skillCards.jsx
 "use client";
 
 import { useState, useEffect, useMemo, useRef } from "react";

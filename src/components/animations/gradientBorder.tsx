@@ -1,3 +1,4 @@
+// \src\components\animations\gradientBorder.tsx
 "use client"
 
 import type React from "react"

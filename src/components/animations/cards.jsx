@@ -1,3 +1,4 @@
+// \src\components\animations\cards.jsx
 "use client"
 
 function Cards({ name }) {

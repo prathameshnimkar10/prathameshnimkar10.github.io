@@ -1,3 +1,4 @@
+// \src\components\animations\bounceCards.jsx
 "use client";
 
 import { useEffect } from "react";

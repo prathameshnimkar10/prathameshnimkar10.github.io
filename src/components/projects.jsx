@@ -1,3 +1,4 @@
+// \src\components\projects.jsx
 "use client";
 
 import FlowingMenu from './animations/flowingMenu';

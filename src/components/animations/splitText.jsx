@@ -1,3 +1,4 @@
+// \src\components\animations\splitText.jsx
 "use client"
 
 import { useSprings, animated } from '@react-spring/web';

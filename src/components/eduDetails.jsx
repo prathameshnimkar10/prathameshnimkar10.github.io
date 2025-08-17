@@ -1,5 +1,5 @@
+// \src\components\eduDetails.jsx
 "use client";
-// we will do educational functions and then export them together
 import Image from "next/image";
 
 export default function EduDetails({ activeItem, className = "" }) {

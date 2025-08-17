@@ -1,3 +1,4 @@
+// \src\components\footer.jsx
 "use client";
 
 import Image from "next/image";

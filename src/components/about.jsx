@@ -1,3 +1,4 @@
+// \src\components\about.jsx
 import ImageCol from "./imageCol";
 import AboutMe from "./aboutMe";
 

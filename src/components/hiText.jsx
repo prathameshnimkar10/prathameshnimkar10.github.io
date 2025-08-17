@@ -1,3 +1,4 @@
+// \src\components\hiText.jsx
 "use client";
 
 import { useState, useEffect } from 'react';

@@ -1,3 +1,4 @@
+// \src\components\skills.jsx
 "use client";
 
 import SkillCards from "./skillCards";
