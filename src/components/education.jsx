@@ -92,6 +92,9 @@ export default function Education() {
 
   return (
     <div className="mt-10 mb-20 flex flex-col items-center w-full">
+      <h1 className="text-center items-center justify-center font-bold text-3xl">
+        EDUCATION
+      </h1>
       {/* Cards Section */}
       <div className="relative">
         <BounceCards
