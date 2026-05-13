@@ -1,16 +1,16 @@
 // \src\components\imageCol.jsx
 import Image from "next/image";
-import Me from "../../public/photo3.jpg";
+import Me from "../../public/photo4.jpg";
 
 export default function ImageCol() {
     return (
         <div className="w-full md:w-1/3 mb-6 md:mb-0">
-            <div className="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 border-2 border-black dark:border-white mx-auto">
+            <div className="w-52 h-52 md:w-58 md:h-58 lg:w-64 lg:h-64 border-2 border-black dark:border-white mx-auto">
                 <Image
                     src={Me}
                     alt="Profile"
-                    width={285}
-                    height={285}
+                    width={385}
+                    height={385}
                     className="w-full h-full object-cover"
                 />
             </div>
@@ -23,7 +23,7 @@ export default function ImageCol() {
 
 // // import Image from "next/image";
 // import TiltedCard from "./animations/tiltedCard";
-// import Me from "../../public/photo3.jpg"
+// import Me from "../../public/photo4.jpg"
 
 // export default function ImageCol() {
 //     return (
