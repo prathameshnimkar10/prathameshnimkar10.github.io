@@ -13,6 +13,10 @@ import logo1 from "../../public/logo-1-crop.png";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="fixed top-4 left-0 w-full flex flex-col sm:flex-row items-center justify-between px-4 sm:px-10 z-50">
       <div className="flex items-center justify-between w-full sm:w-auto mb-4 sm:mb-0">
@@ -35,7 +39,7 @@ const Navbar = () => {
           />
         </motion.div>
 
-        <div className="sm:hidden flex justify-center w-full">
+        <div className="sm:hidden flex justify-center">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-black dark:text-white focus:outline-none text-2xl">
@@ -50,14 +54,15 @@ const Navbar = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
         className={`${isMenuOpen ? "flex" : "hidden"
-          } sm:flex flex-col sm:flex-row bg-white dark:bg-black shadow-xl rounded-full items-center justify-center px-4 sm:px-8 py-2 space-y-4 sm:space-y-0 sm:space-x-4 border border-gray-200`}
+          } sm:flex flex-col sm:flex-row bg-white dark:bg-black shadow-xl rounded-full items-center justify-center px-4 sm:px-8 py-2 sm:py-2 space-y-3 sm:space-y-0 sm:space-x-4 border border-gray-200 w-full sm:w-auto mt-2 sm:mt-0`}
       >
         {/* Navbar Links */}
         {["Home", "About", "Projects", "Experience"].map((item, index) => (
           <Link
             key={index}
             href={`#${item.toLowerCase()}`}
-            className="hover:underline font-medium text-sm sm:text-base text-black dark:text-white"
+            onClick={handleLinkClick}
+            className="hover:underline font-medium text-sm sm:text-base text-black dark:text-white py-2 sm:py-0"
           >
             {item}
           </Link>

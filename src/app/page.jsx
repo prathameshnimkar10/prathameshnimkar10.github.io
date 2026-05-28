@@ -13,13 +13,21 @@ export default function MainPage() {
     <>
       <Navbar className="fixed top-0 w-full bg-white shadow-md" />
       <main className="pt-32 min-h-screen flex flex-col items-center w-full gap-y-12">
-        <HiText />
-        <About />
+        <div id="home" className="scroll-section">
+          <HiText />
+        </div>
+        <div id="about" className="scroll-section">
+          <About />
+        </div>
         {/* <Links /> */}
         <Skills />
         <Education className = "mb-8"/>
-        <Projects />
-        <Experience />
+        <div id="projects" className="scroll-section">
+          <Projects />
+        </div>
+        <div id="experience" className="scroll-section">
+          <Experience />
+        </div>
         <Footer />
       </main>
     </>

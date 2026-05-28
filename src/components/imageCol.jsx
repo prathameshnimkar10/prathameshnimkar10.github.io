@@ -4,8 +4,8 @@ import Me from "../../public/photo4.jpg";
 
 export default function ImageCol() {
     return (
-        <div className="w-full md:w-1/3 mb-6 md:mb-0">
-            <div className="w-52 h-52 md:w-58 md:h-58 lg:w-64 lg:h-64 border-2 border-black dark:border-white mx-auto">
+        <div className="w-full md:w-2/5 mb-6 md:mb-0 flex-shrink-0">
+            <div className="w-52 h-52 md:w-72 md:h-72 lg:w-80 lg:h-80 border-2 border-black dark:border-white mx-auto">
                 <Image
                     src={Me}
                     alt="Profile"

@@ -8,13 +8,24 @@ import Link from "next/link";
 const WorkIcon = () => <div style={{ width: "100%", height: "100%" }}></div>
 
 const experiences = [
+    {
+        title: "Software Engineer/Analyst",
+        subtitle: "Capgemini, Mumbai",
+        date: "Sept. 2025 - Present",
+        description: [
+            "Working across DevOps and software engineering, with hands-on exposure to Docker, Jenkins, and Kubernetes in a professional environment.",
+            "Developing an agentic AI-powered application that interprets natural language prompts to select Terraform templates and provision cloud infrastructure on AWS.",
+            "Upskilling in Terraform and AWS alongside core responsibilities, applying concepts directly to real infrastructure and internal tooling.",
+            "Trained on Core Java, Python, DevOps - Docker, Jenkins, Kubernetes."
+        ]
+    },
     // {
     //     title: "AI / Software Developer Intern",
     //     subtitle: "TechCurators Ltd., Delhi",
-    //     date: "Sept. 2024 - Present",
+    //     date: "Sept. 2024 - June. 2025",
     //     description: [
     //         "Developed the firm's AI products, significantly enhancing their efficiency and integrating them into backend systems through API implementation.",
-    //         "Conducted extensive research on Generative AI, contributing to five case studies and a book chapter titled 'AI Nama'.",
+    //         <>Conducted extensive research on Generative AI, contributing to five case studies and a book chapter titled <Link href="https://www.amazon.in/AI-NAMA-Harneet-Singh-ebook/dp/B0DRKQJ7PY" target="_blank" rel="noopener noreferrer"><b>AI Nama</b></Link>.</>,
     //         "Collaborated on the creation of customized software applications and full-stack websites for a diverse range of clients, ensuring high-quality deliverables that meet specific needs.",
     //         "Contributed to the design and development of TOSS, and was a part of its full-stack development and making AI tools for the same.",
     //         "Worked in deploying full-stack website on Azure for a client (including frontend, backend, and admin panel), as well as hosting and managing them on GoDaddy."

@@ -2,22 +2,22 @@
 export default function AboutMe() {
     return (
         <div className="w-full md:w-3/5">
-            <div className="text-base md:text-base lg:text-xl font-normal">
+            <div className="text-base md:text-base lg:text-xl font-normal space-y-4">
                 <p style={{ textAlign: "justify" }}>
-                    I am Prathamesh Nimkar, a final year undergraduate student pursuing my Bachelor's in Information Technology at Manipal University Jaipur.
+                    I am ABC, a Software Engineer at PQR Corp, with a Bachelor's in Information Technology from XYZ University (GPA: 8.9/10).
                 </p>
                 <p style={{ textAlign: "justify" }}>
-                    I am passionate about software engineering, AI/ML, and automation (DevOps), with a focus on building efficient, AI-driven solutions to real-world problems.
+                    I work in DevOps and cloud infrastructure, working with Docker, Kubernetes, Jenkins, Terraform, and AWS/Azure to build and ship reliable, automated systems. I am also open to backend and platform engineering, and have working knowledge of Python (including FastAPI) and core Java.
                 </p>
                 {/* <p style={{ textAlign: "justify" }}>Through projects and internships, I have gained hands-on experience in software development and AI/ML, continuously enhancing my skills.</p> */}
                 <p style={{ textAlign: "justify" }}>
-                    I am eager to explore new technologies, collaborate with like-minded professionals, and contribute to innovative projects in software engineering and AI.
+                    I enjoy picking up new tools, working with driven people, and building things that actually hold up in production.
                 </p>
                 <p style={{ textAlign: "justify" }}>
-                    I am fluent in English, Marathi and Hindi, with Marathi being my native language. I have also studied Sanskrit during my academic years and have developed a strong understanding of the language.
+                    I am fluent in English, Marathi, and Hindi, with Marathi as my native language. I also have a strong grounding in Sanskrit from my academic years.
                 </p>
                 <p style={{ textAlign: "justify" }}>
-                    Beyond academics, I enjoy playing/watching football, badminton, basketball and F1, and am always open to challenges and learning experiences.
+                    Outside of work, I play and watch football, basketball, and badminton, and love exploring new places on my bike.
                 </p>
                 {/* <p className="font-bold">Hobbies: </p> 
                 <p>I love playing football, badminton, and table tennis. I also enjoy watching football matches (the team I support).</p> */}

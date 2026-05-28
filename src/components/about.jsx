@@ -4,7 +4,7 @@ import AboutMe from "./aboutMe";
 
 export default function About() {
     return(
-        <section className="flex flex-col md:flex-row items-center justify-between px-4 md:px-24 mt-6 md:mt-12 w-full animate-riseUp">
+        <section className="flex flex-col md:flex-row items-start justify-between gap-8 md:gap-12 px-4 md:px-24 mt-3 md:mt-6 w-full animate-riseUp">
             <ImageCol />
             <AboutMe />
         </section>

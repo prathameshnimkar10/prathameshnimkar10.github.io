@@ -4,6 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-section {
+  scroll-margin-top: 100px;
+}
+
 .html:not([data-theme]){
   opacity: 0;
   visibility: hidden;
