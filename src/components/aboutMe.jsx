@@ -4,7 +4,7 @@ export default function AboutMe() {
         <div className="w-full md:w-3/5">
             <div className="text-base md:text-base lg:text-xl font-normal space-y-4">
                 <p style={{ textAlign: "justify" }}>
-                    I am ABC, a Software Engineer at PQR Corp, with a Bachelor's in Information Technology from XYZ University (GPA: 8.9/10).
+                    I am Prathamesh Nimkar, a Software Engineer working at Capgemini, with a Bachelor's in Information Technology from Manipal University Jaipur (GPA: 8.9/10).
                 </p>
                 <p style={{ textAlign: "justify" }}>
                     I work in DevOps and cloud infrastructure, working with Docker, Kubernetes, Jenkins, Terraform, and AWS/Azure to build and ship reliable, automated systems. I am also open to backend and platform engineering, and have working knowledge of Python (including FastAPI) and core Java.
