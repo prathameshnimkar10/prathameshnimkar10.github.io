@@ -6,8 +6,8 @@ import { gsap } from 'gsap';
 
 function FlowingMenu({ items = [] }) {
   return (
-    <div className="w-full h-full overflow-hidden">
-      <nav className="flex flex-col h-full m-0 p-0">
+    <div className="w-full h-auto md:h-full overflow-hidden">
+      <nav className="flex flex-col h-auto md:h-full m-0 p-0">
         {items.map((item, idx) => (
           <MenuItem key={idx} {...item} />
         ))}
@@ -62,11 +62,11 @@ function MenuItem({ link, text, image }) {
 
   const repeatedMarqueeContent = Array.from({ length: 4 }).map((_, idx) => (
     <React.Fragment key={idx}>
-      <span className="text-white dark:text-[#060606] uppercase font-normal text-[4vh] leading-[1.2] p-[1vh_1vw_0]">
+      <span className="text-white dark:text-[#060606] uppercase font-normal text-base sm:text-lg md:text-[4vh] leading-[1.2] p-[1vh_1vw_0]">
         {text}
       </span>
       <div
-        className="w-[200px] h-[7vh] my-[2em] mx-[2vw] p-[1em_0] rounded-[50px] bg-cover bg-center"
+        className="w-[120px] h-10 my-4 mx-3 p-2 rounded-[50px] bg-cover bg-center md:w-[200px] md:h-[7vh] md:my-[2em] md:mx-[2vw] md:p-[1em_0]"
         style={{ backgroundImage: `url(${image})` }}
       />
     </React.Fragment>
@@ -74,11 +74,11 @@ function MenuItem({ link, text, image }) {
 
   return (
     <div
-      className="flex-1 relative overflow-hidden text-center shadow-[0_-1px_0_0_black] dark:shadow-[0_-1px_0_0_white]"
+      className="flex-1 relative min-h-16 md:min-h-0 overflow-hidden text-center shadow-[0_-1px_0_0_black] dark:shadow-[0_-1px_0_0_white]"
       ref={itemRef}
     >
       <a
-        className="flex items-center justify-center h-full relative cursor-pointer uppercase no-underline font-semibold text-black dark:text-white text-[4vh] hover:text-white dark:hover:text-[#060606] focus:text-black dark:focus:text-white focus-visible:text-white dark:focus-visible:text-[#060606]"
+        className="flex items-center justify-center h-full min-h-16 md:min-h-0 relative px-3 py-3 md:px-0 md:py-0 break-words cursor-pointer uppercase no-underline font-semibold text-black dark:text-white text-base sm:text-lg md:text-[4vh] hover:text-white dark:hover:text-[#060606] focus:text-black dark:focus:text-white focus-visible:text-white dark:focus-visible:text-[#060606]"
         href={link}
         target="_blank"
         rel="noopener noreferrer"

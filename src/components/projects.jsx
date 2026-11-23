@@ -12,12 +12,12 @@ const demoItems = [
     { link: 'https://github.com/prathameshnimkar10/parkinson-s-disease-minorproject', text: "Parkinson's Disease Prediction using AI/ML ", image: 'https://picsum.photos/600/400?random=6' },
     { link: 'https://github.com/prathameshnimkar10/epl23-24', text: 'Premier League player prediction (+ dummy player initialisation) ', image: 'https://picsum.photos/600/400?random=7' },
     { link: 'https://github.com/prathameshnimkar10/cropprediction_projectacd', text: 'Crop Prediction using AI/ML', image: 'https://picsum.photos/600/400?random=8' },
-    { link: 'https://github.com/prathameshnimkar10/jwmariottproject', text: 'JW Mariott Website using HTML+CSS+PHP', image: 'https://picsum.photos/600/400?random=9' },
+    // { link: 'https://github.com/prathameshnimkar10/jwmariottproject', text: 'JW Mariott Website using HTML+CSS+PHP', image: 'https://picsum.photos/600/400?random=9' },
 ];
 
 const Projects = () => (
-    <div className="w-screen h-screen">
-        <h1 className="text-center items-center justify-center font-bold text-3xl mb-6">
+    <div className="w-screen h-auto md:h-screen">
+        <h1 className="text-center items-center justify-center font-bold text-2xl sm:text-3xl mb-4 sm:mb-6">
             PROJECTS
         </h1>
         <FlowingMenu items={demoItems} />

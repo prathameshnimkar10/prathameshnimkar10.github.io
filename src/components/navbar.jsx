@@ -19,12 +19,12 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-4 left-0 w-full flex flex-col sm:flex-row items-center justify-between px-4 sm:px-10 z-50">
-      <div className="flex items-center justify-between w-full sm:w-auto mb-4 sm:mb-0">
+      <div className="grid grid-cols-3 items-center w-full sm:flex sm:justify-between sm:w-auto mb-4 sm:mb-0">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="mb-2 sm:mb-0"
+          className="col-start-2 justify-self-center mb-2 sm:col-auto sm:justify-self-auto sm:mb-0"
         >
           <RoundedButton
             icon={
@@ -39,7 +39,7 @@ const Navbar = () => {
           />
         </motion.div>
 
-        <div className="sm:hidden flex justify-center">
+        <div className="col-start-3 justify-self-end sm:hidden flex justify-center">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-black dark:text-white focus:outline-none text-2xl">
